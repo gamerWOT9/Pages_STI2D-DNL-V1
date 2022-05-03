@@ -1,0 +1,137 @@
+div.blocknavbar {
+    display: flex;
+    width: 310px;
+    height: 100px;
+}
+div.navbar {
+    width: 290px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 1px 0px 20px #5a5a5a1e;
+}
+div.navbar div.navbar-homelogo {
+    margin: 40px 0px 20px 20px;
+}
+div.navbar div.navbar-homelogo a {
+    font-size: 30px;
+    padding-left: 10px;
+}
+div.navbar div.navbar-homelogo img {
+    height: 30px;
+}
+
+div.navbar-menu {
+    margin-left: 30px;
+    padding-top: 10px;
+    display: flex;
+}
+div.ulnavmenu {
+    padding-bottom: 20px;
+}
+ul.sub-divisions {
+    display: none;
+    padding-top: 2px;
+    padding-bottom: 15px;
+}
+div.wsub1:hover ul.sub-divisions {
+    display: block;
+}
+
+.arrow {
+    width: 6px;
+    height: 6px;
+    margin-left: 10px;
+    border-top: 2px solid #5F6368;
+    border-right: 2px solid #5F6368;
+    transform: rotate(135deg);
+}
+div.wsub1:hover div.arrow {
+    transform: translate(0px, 3px) rotate(-45deg);
+}
+
+.arrdivi{
+    display: flex;
+    align-items: center;
+}
+
+div.navbar-more {
+    position: absolute;
+    bottom: 10px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 55px;
+}
+div.navbar-more a {
+    text-decoration: none;
+}
+div.navbar-more img {
+    width: 35px;
+}
+
+
+/* Unopened lightbox */
+.lightbox {
+  display: none;
+}
+
+/* Opened lightbox */
+.lightbox:target {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lightbox content */
+.lightbox figcaption {
+  width: 25rem;
+  position: relative;
+  padding: 1.5em;
+  border-radius: 20px;
+  background-color: white;
+}
+
+/* Close button */
+.lightbox .close {
+  position: relative;
+  display: block;
+}
+
+.lightbox .close::after {
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  content: "×";
+  cursor: pointer;
+}
+
+/* Lightbox overlay */
+.lightbox .close::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  backdrop-filter: blur(2px);
+  content: "";
+  cursor: default;
+}
+.lightbox figcaption img {
+    width: 100%;
+}

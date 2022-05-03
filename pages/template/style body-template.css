@@ -1,0 +1,22 @@
+div.realbody {
+    width: 75%;
+    margin: auto;
+    overflow: visible;
+}
+
+div.divBODY {
+    display: flex;
+    align-items: center;
+}
+
+div.realbody h1 {
+    margin-top: 17px;
+}
+div.realbody a {
+    color: green;
+    text-decoration: underline;
+}
+div.realbody a:hover {
+    color: green;
+    text-decoration: green wavy underline;
+}

@@ -1,0 +1,37 @@
+div.realbody {
+    width: 75%;
+    margin: auto;
+    overflow: visible;
+}
+
+div.divBODY {
+    display: flex;
+    align-items: center;
+}
+
+div.realbody h1 {
+    margin-top: 17px;
+    color: white;
+}
+div.realbody a {
+    color: green;
+    text-decoration: underline;
+}
+div.realbody a:hover {
+    color: green;
+    text-decoration: green wavy underline;
+}
+
+
+
+body {
+    background-color: black;
+}
+div.pong-script {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+  }
