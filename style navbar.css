@@ -32,7 +32,6 @@ div.ulnavmenu {
 ul.sub-divisions {
     display: none;
     padding-top: 2px;
-    padding-bottom: 15px;
 }
 div.wsub1:hover ul.sub-divisions {
     display: block;
@@ -134,4 +133,13 @@ div.navbar-more img {
 }
 .lightbox figcaption img {
     width: 100%;
+}
+
+ul.sub-divisions h3{
+    margin-top: 10px;
+    font-weight: normal;
+    color: #5f6368;
+    padding-bottom: 5px;
+    box-shadow: inset 0 -1px 0 0 #dadce0;
+    text-transform: uppercase;
 }
