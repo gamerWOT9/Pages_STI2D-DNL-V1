@@ -26,6 +26,11 @@ div.lobby a:hover {
     margin-right: 20%;
 }
 
+div.lobby a.Aarticle {
+    text-decoration: none;
+    color: black;
+}
+
 article.featured-article {
     max-width: 100%;
     display: flex;
@@ -48,6 +53,16 @@ article.featured-article p {
     margin-top: 10px;
     margin-right: 70px;
     font-size: 25px;
+
+    overflow:hidden;
+    line-height: 2rem;
+    max-height: 8rem;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
 }
 article.featured-article h2 {
     font-size: 50px;
@@ -82,4 +97,7 @@ article.sub-article h3 {
 }
 
 article.sub-article:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.18) 0px 0px 0px 1px;
+}
+article.featured-article:hover {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.18) 0px 0px 0px 1px;}
